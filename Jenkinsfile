@@ -1,19 +1,5 @@
 pipeline { 
-agent any  
-stages {
-         stage("Prepare"){ 
-       steps{
-         sh '''
+     stage("Prepare"){ 
            echo "Prepare continuous delivery env"
-           '''
          }
-     }
-
-     stage ("Build"){
-       steps {
-         sh '''
-           echo "Building app"
-         '''
-       }
-     }
 }
